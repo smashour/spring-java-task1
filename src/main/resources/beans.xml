@@ -28,5 +28,14 @@
         <constructor-arg name="age" value="40"/>
     </bean>
 
+    <bean id="lifecycledemo" class="com.stackroute.springs.bean.LifeCycleDemo" init-method="customInit" destroy-method="customDestroy">
+
+    </bean>
+    <bean id="postprocessor" class="com.stackroute.springs.bean.PostProcessorDemo">
+
+    </bean>
+
+
+
 
 </beans>
