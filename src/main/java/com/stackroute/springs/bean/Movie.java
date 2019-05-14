@@ -1,32 +1,65 @@
 package com.stackroute.springs.bean;
 
 public class Movie {
+    Actor actor1;
+    Actor actor2;
+    Actor actor3;
+    String movieName;
 
-    private Actor actor;
+
 
     public Movie(){}
 
+    public Movie(Actor actor1,Actor actor2,Actor actor3,String movieName) {
+        this.actor1 = actor1;
+        this.actor2 = actor2;
+        this.actor3 = actor3;
+        this.movieName = movieName;
 
-    public Movie( Actor actor) {
-
-        this.actor = actor;
     }
 
 
-    public Actor getActor() {
-        return actor;
+
+
+    public Actor getActor1() {
+        return actor1;
     }
 
-    public void setActor(Actor actor) {
-        this.actor = actor;
+    public void setActor1(Actor actor1) {
+        this.actor1 = actor1;
+    }
+
+    public Actor getActor2() {
+        return actor2;
+    }
+
+    public void setActor2(Actor actor2) {
+        this.actor2 = actor2;
+    }
+
+    public Actor getActor3() {
+        return actor3;
+    }
+
+    public void setActor3(Actor actor3) {
+        this.actor3 = actor3;
     }
 
 
-//    @Override
-//    public String toString() {
-//        return "Movie{" +
-//                "actor=" + actor +
-//                '}';
-//    }
+    public void show(){
+        System.out.println(actor1);
+        System.out.println(actor2);
+        System.out.println(actor3);
+
+    }
+
+
+    public String getMovieName() {
+        return movieName;
+    }
+
+    public void setMovieName(String movieName) {
+        this.movieName = movieName;
+    }
+
 }
-
